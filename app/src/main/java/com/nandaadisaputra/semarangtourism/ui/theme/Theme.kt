@@ -1,14 +1,11 @@
 package com.nandaadisaputra.semarangtourism.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import com.nandaadisaputra.semarangtourism.SemarangTourismApp
 
 private val colorPalette = lightColors(
     primary = cyan,
@@ -19,7 +16,7 @@ private val colorPalette = lightColors(
 fun SemarangTourismTheme(
     content: @Composable () -> Unit
 ) {
-    val SemarangTourismTypography = SemarangTourismTypography(
+    val semarangTourismTypography = SemarangTourismTypography(
         body = TextStyle(
             fontFamily = fontFamily ,
             fontWeight = FontWeight.Medium
@@ -35,7 +32,7 @@ fun SemarangTourismTheme(
     )
 
     CompositionLocalProvider(
-        LocalSemarangTourismTypography provides SemarangTourismTypography
+        LocalSemarangTourismTypography provides semarangTourismTypography
     ) {
         MaterialTheme(
             colors = colorPalette,

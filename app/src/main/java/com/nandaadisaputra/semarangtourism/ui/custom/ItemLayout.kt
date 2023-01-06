@@ -20,9 +20,9 @@ import com.nandaadisaputra.semarangtourism.ui.theme.orangeRed
 
 @Composable
 fun ItemLayout(
+    title: String,
     photoUrl: String,
     modifier: Modifier = Modifier,
-    title: String
 ) {
     Box(
         modifier = modifier
